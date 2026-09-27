@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mancala-tui"
+version = "1.0.0"
+description = "Mancala (Kalah) for the terminal: colourful board, hot-seat PvP and three AI levels."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+mancala = "mancala.cli:main"
+
+[tool.setuptools]
+packages = ["mancala"]
